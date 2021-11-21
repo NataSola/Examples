@@ -1,4 +1,6 @@
-﻿void FillArray(int[] collection)
+﻿
+
+void FillArray(int[] collection)
 {
     int length = collection.Length;
     int index = 0;
@@ -15,7 +17,7 @@ void PrintArray(int[] col)
     int position = 0;
     while (position < count)
     {
-        Console.WriteLine(col[position]);
+        Console.Write(col[position]+ " ");
         position++;
     }
 }
@@ -30,7 +32,7 @@ int IndexOf(int[] collection, int find)
     {
         if (collection[index] == find)
         {
-            position = index;
+            position = index+1;
             break;
         }
         index++;
